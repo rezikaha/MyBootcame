@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">TutorialsNinja Automation Suite</th></tr>
+<tr><td><a href="#t0">TutorialsNinja Tests</a></td><td class="num">6</td><td class="num attn">1</td><td class="num">0</td><td class="num attn">5</td><td class="num">74,916</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">TutorialsNinja Automation Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">TutorialsNinja Tests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.ninja.qa.testcases.CreatAcountTest</td><td><a href="#m0">VerifyRegistereingAccountWithoutFillingAnyDetails</a></td><td rowspan="1">1682607834921</td><td rowspan="1">482</td></tr><tr class="failedeven"><td><a href="#m1">VerifyRegisteringanAccountbyprovidingtheexistingaccount</a></td><td rowspan="1">1682607828631</td><td rowspan="1">1133</td></tr><tr class="failedodd"><td rowspan="3">com.ninja.qa.testcases.LoginTest</td><td><a href="#m2">verifyNinjaLoginWithEmptyUsernameAndCorrectPassword</a></td><td rowspan="1">1682607852086</td><td rowspan="1">581</td></tr><tr class="failedodd"><td><a href="#m3">verifyNinjaLoginWithInvalideUsernameAndPassword</a></td><td rowspan="1">1682607842291</td><td rowspan="1">186</td></tr><tr class="failedodd"><td><a href="#m4">verifyNinjaLoginWithValideUsernameAndInvalidePassword</a></td><td rowspan="1">1682607846988</td><td rowspan="1">665</td></tr><tr><th colspan="4">TutorialsNinja Tests &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.ninja.qa.testcases.LoginTest</td><td><a href="#m5">verifyNinjaLoginWithValideUsernameAndPassword</a></td><td rowspan="1">1682607836380</td><td rowspan="1">0</td></tr><tr><th colspan="4">TutorialsNinja Tests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.ninja.qa.testcases.CreatAcountTest</td><td><a href="#m6">VerifyRegisteringanAccountbyprovidingallthefields</a></td><td rowspan="1">1682607816532</td><td rowspan="1">1770</td></tr><tr class="passedeven"><td><a href="#m7">verifyNinjaRegesterWithValideUsernameAndPassword</a></td><td rowspan="1">1682607807651</td><td rowspan="1">1871</td></tr><tr class="passedodd"><td rowspan="1">com.ninja.qa.testcases.LoginTest</td><td><a href="#m8">verifyNinjaLoginWithValideUsernameAndEmptyPassword</a></td><td rowspan="1">1682607857208</td><td rowspan="1">663</td></tr><tr class="passedeven"><td rowspan="3">com.ninja.qa.testcases.Search</td><td><a href="#m9">VerifySearchingWithanExistingProductName</a></td><td rowspan="1">1682607862473</td><td rowspan="1">738</td></tr><tr class="passedeven"><td><a href="#m10">VerifysearchingwithanonexistingProductName</a></td><td rowspan="1">1682607867278</td><td rowspan="1">664</td></tr><tr class="passedeven"><td><a href="#m11">VerifysearchingwithoutprovidinganyProductName</a></td><td rowspan="1">1682607872879</td><td rowspan="1">557</td></tr></tbody>
+</table>
+<h2>TutorialsNinja Tests</h2><h3 id="m0">com.ninja.qa.testcases.CreatAcountTest#VerifyRegistereingAccountWithoutFillingAnyDetails</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //div[contains(@class,&apos;alert-dismissible&apos;] because of the following error:
+SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;//div[contains(@class,&apos;alert-dismissible&apos;]&apos; is not a valid XPath expression.
+  (Session info: chrome=112.0.5615.138)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [040fc0cc7b6a372f698f2316f4117448, findElement {using=xpath, value=//div[contains(@class,&apos;alert-dismissible&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.138, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\REZIKA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51276}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51276/devtoo..., se:cdpVersion: 112.0.5615.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 040fc0cc7b6a372f698f2316f4117448
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.ninja.qa.testcases.CreatAcountTest.VerifyRegistereingAccountWithoutFillingAnyDetails(CreatAcountTest.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.ninja.qa.testcases.CreatAcountTest#VerifyRegisteringanAccountbyprovidingtheexistingaccount</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;java.lang.CharSequence.toString()&quot; because &quot;s&quot; is null
+	at java.base/java.lang.String.contains(String.java:2854)
+	at com.ninja.qa.testcases.CreatAcountTest.VerifyRegisteringanAccountbyprovidingtheexistingaccount(CreatAcountTest.java:86)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.ninja.qa.testcases.LoginTest#verifyNinjaLoginWithEmptyUsernameAndCorrectPassword</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;java.lang.CharSequence.toString()&quot; because &quot;s&quot; is null
+	at java.base/java.lang.String.contains(String.java:2854)
+	at com.ninja.qa.testcases.LoginTest.verifyNinjaLoginWithEmptyUsernameAndCorrectPassword(LoginTest.java:84)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.ninja.qa.testcases.LoginTest#verifyNinjaLoginWithInvalideUsernameAndPassword</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:98)
+	at com.ninja.qa.testcases.LoginTest.verifyNinjaLoginWithInvalideUsernameAndPassword(LoginTest.java:53)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.ninja.qa.testcases.LoginTest#verifyNinjaLoginWithValideUsernameAndInvalidePassword</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;java.lang.CharSequence.toString()&quot; because &quot;s&quot; is null
+	at java.base/java.lang.String.contains(String.java:2854)
+	at com.ninja.qa.testcases.LoginTest.verifyNinjaLoginWithValideUsernameAndInvalidePassword(LoginTest.java:72)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.ninja.qa.testcases.LoginTest#verifyNinjaLoginWithValideUsernameAndPassword</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.RuntimeException: java.lang.NullPointerException: Cannot invoke &quot;org.apache.poi.xssf.usermodel.XSSFSheet.getLastRowNum()&quot; because &quot;com.ninja.qa.test.data.SupplyTestData.sheet&quot; is null
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.lang.NullPointerException: Cannot invoke &quot;org.apache.poi.xssf.usermodel.XSSFSheet.getLastRowNum()&quot; because &quot;com.ninja.qa.test.data.SupplyTestData.sheet&quot; is null
+	at com.ninja.qa.test.data.SupplyTestData.getTutorialsninjaTestDataFromExcelSheet(SupplyTestData.java:35)
+	at com.ninja.qa.test.data.SupplyTestData.excelSheetDataSuplier(SupplyTestData.java:25)
+	... 25 more
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.ninja.qa.testcases.CreatAcountTest#VerifyRegisteringanAccountbyprovidingallthefields</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.ninja.qa.testcases.CreatAcountTest#verifyNinjaRegesterWithValideUsernameAndPassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.ninja.qa.testcases.LoginTest#verifyNinjaLoginWithValideUsernameAndEmptyPassword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.ninja.qa.testcases.Search#VerifySearchingWithanExistingProductName</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">com.ninja.qa.testcases.Search#VerifysearchingwithanonexistingProductName</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">com.ninja.qa.testcases.Search#VerifysearchingwithoutprovidinganyProductName</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
